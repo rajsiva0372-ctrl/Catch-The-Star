@@ -59,7 +59,15 @@ h1 {
     position: absolute;
     font-size: 38px;
     cursor: pointer;
+    user-select: none;
+    touch-action: manipulation;
+    transition: transform 0.2s ease;
 }
+
+#star:hover {
+    transform: scale(1.15);
+}
+
 
 button {
     background: gold;
@@ -155,4 +163,47 @@ button:hover {
 
 #star.caught {
     animation: starPop 0.25s ease;
+}
+/* Task 05 - Mobile Optimization */
+
+#game-area {
+    width: min(600px, 100%);
+    max-width: 100%;
+}
+
+.container {
+    padding: 20px;
+}
+
+.game-info {
+    flex-wrap: wrap;
+    gap: 15px;
+}
+
+button {
+    min-height: 48px;
+}
+
+@media (max-width: 480px) {
+    h1 {
+        font-size: 26px;
+    }
+
+    .box {
+        padding: 10px 15px;
+        font-size: 16px;
+    }
+
+    .box h2 {
+        font-size: 22px;
+    }
+
+    #game-area {
+        height: 300px;
+    }
+
+    button {
+        padding: 12px 20px;
+        font-size: 16px;
+    }
 }
