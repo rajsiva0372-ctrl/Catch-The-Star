@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Catch the Star Game</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <div class="container">
+
+        <h1>⭐ Catch the Star ⭐</h1>
+
+        <p class="subtitle">Catch as many stars as you can!</p>
+
+        <div class="game-info">
+            <div class="box">
+                🏆 Score
+                <h2 id="score">0</h2>
+            </div>
+
+            <div class="box">
+                ⏱️ Time
+                <h2 id="time">30</h2>
+            </div>
+        </div>
+
+        <div id="game-area">
+            <div id="star">⭐</div>
+        </div>
+
+        <button onclick="startGame()">Start Game</button>
+
+        <p class="instructions">
+            Click the falling star to earn points!
+        </p>
+
+    </div>
+
+    <script src="script.js"></script>
+
+</body>
+</html>
