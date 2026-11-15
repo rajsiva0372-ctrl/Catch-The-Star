@@ -1,0 +1,15 @@
+        START
+          |
+          v
+       PLAYING
+       /  |  \
+      /   |   \
+ PAUSED  WIN  LOSE
+    |
+    v
+ PLAYING
+    |
+ RESTART
+    |
+    v
+   START

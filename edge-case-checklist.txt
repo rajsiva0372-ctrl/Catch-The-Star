@@ -1,0 +1,10 @@
+CATCH THE STAR - EDGE CASE TEST CHECKLIST
+
+1. Start game and check timer.
+2. Pause game and check timer stops.
+3. Resume game and check timer continues.
+4. Restart game and check score becomes 0.
+5. Check level increases after every 5 stars.
+6. Check high score is saved after refresh.
+7. Check game ends when timer reaches 0.
+8. Check star disappears after game over.
