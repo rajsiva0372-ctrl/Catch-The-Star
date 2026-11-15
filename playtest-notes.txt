@@ -1,0 +1,36 @@
+# Catch The Star – Playtesting Feedback Report
+
+## Project Details
+Project Name: Catch The Star
+Testing Date: 15 November 2026
+Number of Feedback Responses: 3
+
+## Tester Feedback
+
+### Feedback 1
+- Design is simple and attractive.
+- Timer and scoring system work well.
+- Game is fun and easy to play.
+
+### Feedback 2
+- Game is interesting and easy to understand.
+- Star movement and scoring system are appreciated.
+- Suggestion: Add different levels and background music.
+
+### Feedback 3
+- Game is creative and works smoothly.
+- 30-second challenge makes it interesting.
+- Suggestion: Add a high-score feature.
+
+## Overall Findings
+- Players found the game easy to understand.
+- The design and gameplay received positive feedback.
+- Timer, scoring and star movement were appreciated.
+
+## Improvement Suggestions
+1. Improve level progression.
+2. Consider adding background music.
+3. Make the high-score feature more visible.
+
+## Conclusion
+The playtesting received positive feedback from three responses. The suggestions will help improve the overall gaming experience.
