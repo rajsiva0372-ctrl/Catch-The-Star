@@ -35,9 +35,20 @@
     </div>
 
 </div>
+<p class="instructions">
+  Click the star or press SPACE to catch it!
+  Use P to pause and M to mute.
+</p>
+
+<button onclick="toggleSound()" id="soundBtn">
+  🔊 Sound ON
+</button>
 
         <div id="game-area">
-            <div id="star">⭐</div>
+            <div id="star"
+     tabindex="0"
+     role="button"
+     aria-label="Catch the star">⭐</div>
         </div>
 
         <button onclick="startGame()">Start</button>

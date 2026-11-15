@@ -113,6 +113,13 @@ star.addEventListener("click", function () {
         score++;
 
         scoreDisplay.innerText = score;
+        playCatchSound();
+        star.classList.remove("caught");
+
+// Restart animation
+void star.offsetWidth;
+
+star.classList.add("caught");
 
         // High Score
         if (score > highScore) {
@@ -126,6 +133,58 @@ star.addEventListener("click", function () {
         levelDisplay.innerText = level;
 
         moveStar();
+    }
+
+});
+// Sound Control
+let soundEnabled = true;
+
+function toggleSound() {
+    soundEnabled = !soundEnabled;
+
+    document.getElementById("soundBtn").innerText =
+        soundEnabled ? "🔊 Sound ON" : "🔇 Sound OFF";
+}
+// Catch Sound Effect
+function playCatchSound() {
+    if (!soundEnabled) return;
+
+    const audio = new AudioContext();
+    const oscillator = audio.createOscillator();
+    const gain = audio.createGain();
+
+    oscillator.connect(gain);
+    gain.connect(audio.destination);
+
+    oscillator.frequency.value = 700;
+    gain.gain.value = 0.15;
+
+    oscillator.start();
+
+    oscillator.stop(audio.currentTime + 0.15);
+}
+
+// Keyboard Controls
+document.addEventListener("keydown", function(event) {
+
+    if (event.code === "Space") {
+        event.preventDefault();
+
+        if (gameState === "PLAYING") {
+            star.click();
+        }
+    }
+
+    if (event.key.toLowerCase() === "p") {
+        if (gameState === "PLAYING") {
+            pauseGame();
+        } else if (gameState === "PAUSED") {
+            resumeGame();
+        }
+    }
+
+    if (event.key.toLowerCase() === "m") {
+        toggleSound();
     }
 
 });
